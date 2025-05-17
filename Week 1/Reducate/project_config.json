@@ -1,0 +1,33 @@
+{
+  "name": "StudyApp",
+  "description": "A cross-platform C++ study assistant app with chat, AI note generation, and collaboration.",
+  "version": "1.0.0",
+  "author": "Seth",
+  "license": "MIT",
+  "platforms": ["android", "ios", "desktop"],
+  "dependencies": {
+    "qt": "6.x",
+    "onnxruntime": "1.x",
+    "sqlite": "3.x",
+    "webrtc": "custom_sdk",
+    "boost": "optional",
+    "tesseract": "5.x",
+    "opencv": "4.x"
+  },
+  "modules": [
+    "auth",
+    "chat",
+    "calls",
+    "study",
+    "ai",
+    "db",
+    "utils"
+  ],
+  "build": {
+    "cmake_minimum_required": "3.20",
+    "cpp_standard": "17",
+    "automoc": true,
+    "autorcc": true,
+    "autouic": true
+  }
+}
